@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project2model</title>
+    <style>
+        html{
+            
+            background-image: url(turk.jpg);
+            background-size:cover;
+        }
+        
+        #buttonArea{
+            position:absolute;
+          top:500px;
+          left:15vh;
+          width:400px;
+          height: 80px;
+          
+          font-size: 2.1em;
+          border:6px solid rgb(255, 255, 255);
+            background: transparent;
+          box-shadow: 0 0 50px black;
+                border-radius:19px;
+          transition: 0.5ms;
+        }
+
+        #buttonArea:hover{
+            background-color: rgb(0, 255, 255);
+            color:rgb(246, 242, 245)
+            
+        }
+        #modal{
+            position:absolute;
+            top:10%;
+            left: 10%;
+            padding: 20px;
+           
+            border:5px solid white;
+            width: 150px;
+            height:50px;
+            
+            font-size: 1.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            animation-name: animationmodal;
+            animation-duration: 3.6s;
+            background-color: rgb(127, 113, 25);
+            border-radius:10px;
+
+        }
+
+
+        #close-button{
+            font-size: 3.8rem;
+            color:rgb(240, 19, 19);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #adven{
+            background-image: url(busisds.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:13%;
+            right:80px;
+        width: 190px;
+        height: 191.4px;
+            border:4px solid gold;
+            
+
+        }
+        #cen{
+            background-image: url(build1.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:49%;
+            right:80px;
+        width: 190px;
+        height: 180.4px;
+            border:4px solid gold;
+            
+
+        }
+        #ven{
+            background-image: url(wife1.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:82.9%;
+            right:80px;
+        width: 190px;
+        height: 291.2px;
+            border:4px solid gold;
+            
+
+        }
+        #kadven{
+            background-image: url(food.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:130%;
+            right:80px;
+        width: 190px;
+        height: 165.4px;
+            border:4px solid gold;
+            
+
+        }
+        #dven{
+            background-image: url(car1.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:165.5%;
+            right:80px;
+        width: 190px;
+        height: 180.4px;
+            border:4px solid gold;
+            
+
+        }
+        
+        #ten{
+            background-image: url(car72.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:234.5%;
+            right:200px;
+        width: 190px;
+        height: 116.4px;
+            border:4px solid gold;
+            
+
+        }
+        #gen{
+            background-image: url(build2.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:199.5%;
+            right:80px;
+        width: 190px;
+        height: 180.4px;
+            border:4px solid gold;
+            
+
+        }
+
+        #container{
+            display:none;
+        }
+
+
+    </style>
+
+<style>
+     #fan{
+            background-image: url(car3.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:13%;
+            right:300px;
+        width: 190px;
+        height: 191.4px;
+            border:4px solid gold;
+            
+
+        }
+        #fana{
+            background-image: url(wife2.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:49%;
+            right:300px;
+        width: 190px;
+        height: 180.4px;
+            border:4px solid gold;
+            
+
+        }
+        #fany{
+            background-image: url(car4.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:82.9%;
+            right:300px;
+        width: 190px;
+        height: 291.2px;
+            border:4px solid gold;
+            
+
+        }
+        #fani{
+            background-image: url(wife3.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:130%;
+            right:300px;
+        width: 190px;
+        height: 165.4px;
+            border:4px solid gold;
+            
+
+        }
+        #fane{
+            background-image: url(car5.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:165.5%;
+            right:300px;
+        width: 190px;
+        height: 180.4px;
+            border:4px solid gold;
+            
+
+        }
+
+        #hej{
+            background-image: url(car8.jpg);
+            background-size:12rem;
+            position:absolute;
+            top:199.5%;
+            right:300px;
+        width: 190px;
+        height: 180.4px;
+            border:4px solid gold;
+            
+
+        }
+
+</style>
+</head>
+<body>
+    
+<button id="buttonArea">
+    <span id="open-button">Where's Our Modal😁</span>
+</button>
+
+<div id="container">
+   
+    <div  id="modal">
+        <span>          Click to Exit     </span>
+
+        <div id="close-button"> &times</div>
+    </div>
+
+
+    <div id="adven">ADVEN</div>
+    <div id="cen">CEN</div>
+    <div id="ven">VEN</div>
+    <div id="kadven">KADVEN</div>
+    <div id="dven">DVEN</div>
+
+    <div id="ten">TEN</div>
+    <div id="gen">GEN</div>
+
+    <div id="fan">FAN</div>
+    <div id="fana">FANA</div>
+    <div id="fany">FANY</div>
+    <div id="fani">FANI</div>
+    <div id="fane">FANE</div>
+    <div id="hej">HEJ</div>
+
+</div>
+
+
+
+</body>
+<script>
+    const openbutton=document.getElementById('open-button')
+    const closebutton=document.getElementById('close-button')
+    const modcontainer=document.getElementById('container')
+
+    const pict=document.getElementById('adven')
+    const pictur=document.getElementById('cen')
+    const pic=document.getElementById('ven')
+    const pi=document.getElementById('kadven')
+    const picture=document.getElementById('dven')
+
+    const poi=document.getElementById('ten')
+    const poin=document.getElementById('gen')
+
+    const pon=document.getElementById('fan')
+    const pont=document.getElementById('fana')
+    const ponti=document.getElementById('fany')
+    const pontia=document.getElementById('fani')
+    const pontiac=document.getElementById('fane')
+    const po=document.getElementById('hej')
+
+
+    openbutton.addEventListener('click',()=>{
+        modcontainer.style.display='block';
+        
+        pict.style.display='block';
+        pictur.style.display='block';
+        pic.style.display='block';
+        pi.style.display='block';
+        picture.style.display='block';
+
+        poi.style.display='block';
+        poin.style.display='block';
+
+    pon.style.display='block';
+    pont.style.display='block';
+    ponti.style.display='block';
+    pontia.style.display='block';
+    pontiac.style.display='block';
+    po.style.display='block';
+       
+
+    })
+
+    closebutton.addEventListener('click',()=>{
+        modcontainer.style.display='none';
+        
+        pict.style.display='none';
+        pictur.style.display='none';
+        pic.style.display='none';
+        pi.style.display='none';
+        picture.style.display='none';
+
+        poi.style.display='none';
+        poin.style.display='none';
+
+    pon.style.display='none';
+    pont.style.display='none';
+    ponti.style.display='none';
+    pontia.style.display='none';
+    pontiac.style.display='none'; 
+    po.style.display='none';
+       
+    })
+
+
+
+
+
+
+
+
+</script>
+</html>
